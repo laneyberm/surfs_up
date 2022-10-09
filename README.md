@@ -1,13 +1,37 @@
 # Temperature data for June and December in Oahu
 
 ## Overview
-W. Avy likes your analysis, but he wants more information about temperature trends before opening the surf shop. Specifically, he wants temperature data for the months of June and December in Oahu, in order to determine if the surf and ice cream shop business is sustainable year-round.
+W. Avy wants invest in a new surf and ice cream shop business in Oahu since his last location recieved too much rain and had to close. He has given us weather data to determine where will be the best location and if an ice cream shop is sustainable year-round.
 
-You have the last 12 months of precipitation data already loaded into your SQLite database, so you are ready to go. W. Avy supplied you with the data he wants us to use and has asked you to look at a full year of data.
+We will find information about temperature trends before opening the surf shop. We have loaded the data into a SQLite database and will make statistical analysis—such as the mean, standard deviation, minimum, and maximum. 
 
-we want to make sure to provide W. Avy with some solid statistical analysis—such as the mean, standard deviation, minimum, and maximum. He needs hard results if he's going to invest his money.
 
-"This is great! It's clear from your analysis that Oahu is a great location for the new surf shop. We're almost ready to switch out our suit and ties for some sandals! My only question is, how many stations are being used to collect this information? Is it possible that we don't have enough data collection stations for this information to be valid?"
+## Resources
+- Data Source: hawaii.sqlite
+- Software: Jupyter Notebook 6.4.8, Python 3.7.13, SQLAlchemy 
+- Library: Pandas 1.3.5, NumPy
+
+
+## Results
+<img src="https://github.com/laneyberm/surfs_up/blob/main/june_temp.png" width="150"><img src="https://github.com/laneyberm/surfs_up/blob/main/dec_temp.png" width="170">
+
+Above are the statistical analysis of the June and December Temperatures in Oahu. We can note the following:
+- June is warmer in Oahu than the month of December. The average temperature in June is about 75°F  and in December is abour 71°F .
+- June's low temperture is 64°F  and December's low temperature is 56°F . 
+- June and December high temperatures are similar, 85°F and 83°F respectfully. 
+
+
+## Summary
+Oahu is a great location for the new surf shop. 
+
+While the June temp is hotter by a few degress, this isn't too significant to make a big difference. Meaning that probably between them for those 6 months we can tell investors that we could capitalize on people fleeing colder temps from the northern hemisphere or US mainland: that means good tourism = consistent potential revenue at least with regard to stable parameters. We get to this conclusion looking at either the averages or even the max temps above.
+
+Heat and good temp is great to consider for a surf shop, but W. Avy mentioned the last surf shop he invested in went under because it got "rained out." We'd want to go above this and also gather data on wave patterns near the specific location we are looking at to attract more of the surfer crowd and also explore the data set with more queries on the weather at large.
+
+Also, as noted above, the temps for the minimum / lowest temp are what are most different between June and December. I would run queries to determine what time of the day is colder, and how long that cold temp in June lasts.
+
+Stations and times of day weather 
+
 
 Thankfully, you know you can run a query on the SQLite database to find this information quickly. You respond, "Glad the analysis is helping you with your decision-making! Great question about the number of stations. Let me do some quick queries and find out for us." And, with that, you get back to work.
 Now we know there are 9 stations from which precipitation data is being collected.
@@ -16,17 +40,3 @@ W. Avy tells you that he's interested in the most active station; he believes it
 
 It occurs to you that he hasn't asked for an analysis of the temperature yet, so you decide to dive into temperature data.
 Let's get to work on our temperature analysis! We'll be using the results from our last query, which gave us the most active station, to gather some basic statistics. For our most active station, we'll need to find the minimum, maximum, and average temperatures.
-
-## Resources
-- Data Source: hawaii.sqlite
-- Software: Jupyter Notebook 6.4.8, Python 3.7.13, SQLAlchemy, 
-- Library: Pandas 1.3.5
-
-## Results
-There is a bulleted list that addresses the three key differences in weather between June and December.
-
-<img src="https://github.com/laneyberm/surfs_up/blob/main/june_temp.png" width="150">
-<img src="https://github.com/laneyberm/surfs_up/blob/main/dec_temp.png" width="150">
-
-## Summary
-There is a high-level summary of the results and there are two additional queries to perform to gather more weather data for June and December.
