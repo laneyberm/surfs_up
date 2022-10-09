@@ -3,7 +3,7 @@
 ## Overview
 W. Avy wants invest in a new surf and ice cream shop business in Oahu since his last location recieved too much rain and had to close. He has given us weather data to determine where will be the best location and if an ice cream shop is sustainable year-round.
 
-We will find information about temperature trends before opening the surf shop. We have loaded the data into a SQLite database and will make statistical analysis—such as the mean, standard deviation, minimum, and maximum. 
+We will find information about temperature trends before opening the surf shop. We have loaded the data into a SQLite database and will make statistical analysis—such as the mean, standard deviation, minimum, and maximum to determine the sustainability of the surf and ice cream shop. 
 
 
 ## Resources
@@ -22,21 +22,8 @@ Above are the statistical analysis of the June and December Temperatures in Oahu
 
 
 ## Summary
-Oahu is a great location for the new surf shop. 
+Oahu is a great location for the new surf shop. When looking at average temperatures from the above information, the temperatures are ideal in both months for the surf and ice cream shop to be sustainable.
 
-While the June temp is hotter by a few degress, this isn't too significant to make a big difference. Meaning that probably between them for those 6 months we can tell investors that we could capitalize on people fleeing colder temps from the northern hemisphere or US mainland: that means good tourism = consistent potential revenue at least with regard to stable parameters. We get to this conclusion looking at either the averages or even the max temps above.
+One opportunity to research is the low temperature in December. We should find how often this happens or what time the temperature is taken. Typically, temperature is lower in the eveing and early morning which is not when the shop would be open. So, this information might not be relevant the shop operating hours. 
 
-Heat and good temp is great to consider for a surf shop, but W. Avy mentioned the last surf shop he invested in went under because it got "rained out." We'd want to go above this and also gather data on wave patterns near the specific location we are looking at to attract more of the surfer crowd and also explore the data set with more queries on the weather at large.
-
-Also, as noted above, the temps for the minimum / lowest temp are what are most different between June and December. I would run queries to determine what time of the day is colder, and how long that cold temp in June lasts.
-
-Stations and times of day weather 
-
-
-Thankfully, you know you can run a query on the SQLite database to find this information quickly. You respond, "Glad the analysis is helping you with your decision-making! Great question about the number of stations. Let me do some quick queries and find out for us." And, with that, you get back to work.
-Now we know there are 9 stations from which precipitation data is being collected.
-
-W. Avy tells you that he's interested in the most active station; he believes it will provide the most data and help you determine the best location for the surf shop. However, you know that more data doesn't necessarily equate to more accurate results. But W. Avy is passionate about the location—he's convinced that it will provide the best weather for surfing and eating ice cream. So you tell him that you'll investigate this location further.
-
-It occurs to you that he hasn't asked for an analysis of the temperature yet, so you decide to dive into temperature data.
-Let's get to work on our temperature analysis! We'll be using the results from our last query, which gave us the most active station, to gather some basic statistics. For our most active station, we'll need to find the minimum, maximum, and average temperatures.
+Additionally, W. Avy mentioned that the previous location got "rained out". We shoudl also provide information on precipation for the area to have the client aware of this data in his go farward with the investment.
