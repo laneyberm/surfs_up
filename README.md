@@ -1,4 +1,4 @@
-# Temperature data for June and December in Oahu
+# Temperature Data for June and December in Oahu, Hawaii
 
 ## Overview
 W. Avy wants invest in a new surf and ice cream shop business in Oahu since his last location recieved too much rain and had to close. He has given us weather data to determine where will be the best location and if an ice cream shop is sustainable year-round.
