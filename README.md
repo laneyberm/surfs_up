@@ -8,8 +8,8 @@ We will find information about temperature trends before opening the surf shop. 
 
 ## Resources
 - Data Source: hawaii.sqlite
-- Software: Jupyter Notebook 6.4.8, Python 3.7.13, SQLAlchemy 
-- Library: Pandas 1.3.5, NumPy
+- Software: Jupyter Notebook 6.4.8, Python 3.7.13  
+- Library: Pandas 1.3.5, NumPy 1.21.5, SQLAlchemy 1.4.32
 
 
 ## Results
@@ -26,4 +26,4 @@ Oahu is a great location for the new surf shop. When looking at average temperat
 
 One opportunity to research is the low temperature in December. We should find how often this happens or what time the temperature is taken. Typically, temperature is lower in the eveing and early morning which is not when the shop would be open. So, this information might not be relevant the shop operating hours. 
 
-Additionally, W. Avy mentioned that the previous location got "rained out". We shoudl also provide information on precipation for the area to have the client aware of this data in his go farward with the investment.
+Additionally, W. Avy mentioned that the previous location got "rained out". We should also provide information on precipitation for the area to have the client aware of this data in his go farward with the investment.
